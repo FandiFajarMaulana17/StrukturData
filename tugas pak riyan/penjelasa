@@ -1,0 +1,26 @@
+Kode yang Anda bagikan adalah program C++ yang mengimplementasikan operasi-operasi dasar pada struktur data tumpukan (stack). Di sini, tumpukan digunakan untuk menyimpan daftar buku.
+
+Mari kita bahas secara singkat bagian-bagian utama dari program tersebut:
+
+1. **Pendefinisian Header dan Penggunaan Namespace**: Program dimulai dengan beberapa direktif `#include` untuk menyertakan pustaka-pustaka standar yang dibutuhkan seperti `iostream`, `stack`, dan `string`. Lalu, `using namespace std;` digunakan untuk mempermudah penggunaan simbol-simbol dari namespace `std`.
+
+2. **Deklarasi Fungsi-fungsi**: Program mendefinisikan dua fungsi: `displayMenu()` dan `displayAllBooks()`. `displayMenu()` digunakan untuk menampilkan menu operasi tumpukan buku, sedangkan `displayAllBooks()` untuk menampilkan semua buku dalam tumpukan.
+
+3. **Fungsi `main()`**: Pada fungsi `main()`, sebuah tumpukan (`stack<string> bookStack`) dan sebuah variabel `int choice` untuk menyimpan pilihan pengguna dideklarasikan. Program berjalan dalam sebuah loop `while (true)` yang hanya akan berhenti jika pengguna memilih opsi keluar (`choice == 7`).
+
+4. **Menu Operasi**: Setiap iterasi loop, program akan menampilkan menu menggunakan `displayMenu()`, dan kemudian membaca input pengguna untuk memilih operasi. Operasi-operasi tersebut mencakup:
+   - Menambahkan buku ke tumpukan (`push`).
+   - Mengambil buku teratas dari tumpukan (`pop`).
+   - Melihat buku teratas di tumpukan tanpa menghapusnya (`peek`).
+   - Memeriksa apakah tumpukan kosong (`isEmpty`).
+   - Melihat jumlah buku dalam tumpukan (`size`).
+   - Menampilkan semua buku dalam tumpukan.
+   - Keluar dari program.
+   
+5. **Implementasi Operasi**: Setiap pilihan operasi diimplementasikan menggunakan serangkaian pernyataan `if-else`. Misalnya, jika pengguna memilih untuk menambahkan buku, program akan meminta pengguna memasukkan nama buku, lalu menambahkannya ke tumpukan menggunakan `bookStack.push(book)`.
+
+6. **Display All Books**: Saat pengguna memilih untuk melihat semua buku dalam tumpukan (`choice == 6`), fungsi `displayAllBooks()` dipanggil. Fungsi ini akan mencetak semua buku dalam tumpukan satu per satu, dengan mengeluarkan dan mencetak buku teratas tumpukan hingga tumpukan kosong.
+
+7. **Keluar dari Program**: Jika pengguna memilih opsi keluar (`choice == 7`), pesan "Keluar dari program" akan dicetak dan loop akan dihentikan dengan `break`, sehingga program akan keluar dari `main()` dan selesai.
+
+Program ini menyediakan antarmuka sederhana untuk berinteraksi dengan tumpukan buku, memungkinkan pengguna untuk menambahkan, mengambil, dan melihat buku dalam tumpukan dengan berbagai operasi yang diberikan.
